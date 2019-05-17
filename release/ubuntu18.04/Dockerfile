@@ -1,5 +1,5 @@
 FROM ubuntu:18.04
-MAINTAINER Peter Gallagher
+LABEL maintainer Peter Gallagher
 
 # Update base packages
 RUN apt update \

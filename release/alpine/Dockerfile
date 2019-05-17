@@ -1,5 +1,5 @@
 FROM alpine:3.4
-MAINTAINER Tom Gamull <tom.gamull@gmail.com>
+LABEL maintainer Tom Gamull <tom.gamull@gmail.com>
 
 RUN echo "@edge http://dl-4.alpinelinux.org/alpine/edge/community/" >> \
         /etc/apk/repositories \

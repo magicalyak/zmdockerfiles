@@ -1,5 +1,5 @@
 FROM centos:7
-MAINTAINER Andrew Bauer <zonexpertconsulting@outlook.com>
+LABEL maintainer Andrew Bauer <zonexpertconsulting@outlook.com>
 
 # Get the entrypoint script
 ADD https://raw.githubusercontent.com/ZoneMinder/zmdockerfiles/master/utils/entrypoint.sh /usr/local/bin/
