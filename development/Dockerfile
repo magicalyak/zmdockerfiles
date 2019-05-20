@@ -1,12 +1,9 @@
 FROM ubuntu:18.04
-LABEL maintainer Peter Gallagher
+LABEL maintainer Tom Gamull <tom.gamull@nginx.com>
 
-# Update base packages
 RUN apt update \
     && apt upgrade --assume-yes
-
-# Install pre-reqs
-RUN apt install --assume-yes --no-install-recommends gnupg
+RUN apt install --assume-yes gnupg nginx mariadb-server php-fpm php-mysql fcgiwrap
 
 # Configure Zoneminder PPA
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys ABE4C7F993453843F0AEB8154D0BF748776FFB04 \
